@@ -93,6 +93,15 @@ body{
     border-bottom: .12vw solid rgba(209, 169, 248, 0.9);
 }
 
+.block:hover .block--inner div{
+    transform: rotate(45deg);
+}
+
+.block:active .block--inner div ,
+.block:active .block--inner span{
+    color: rgba(209, 169, 248, 0.9);
+}
+
 .block--info img{
     display: block;
     margin: 0 auto;
@@ -159,8 +168,9 @@ input:checked + .block--inner{
 }
 
 @media screen and (max-width: 321px){
-    .container {
+.container {
         max-width: 90%;
+        cursor: default;
 }
 .inner {
     font-size: 7.5vw;
