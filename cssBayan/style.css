@@ -153,6 +153,11 @@ input:checked + .block--inner{
         margin: 9vw auto;
 }
 
+.block--info, .block--inner {
+    cursor: default;
+}
+
+
 .inner {
     font-size: 6vw;
 }
@@ -175,6 +180,10 @@ input:checked + .block--inner{
 .inner {
     font-size: 7.5vw;
     filter: drop-shadow(.2rem .1rem .1rem #4d4b4b);
+}
+
+.block--info, .block--inner {
+    cursor: default;
 }
 
 .plus{
