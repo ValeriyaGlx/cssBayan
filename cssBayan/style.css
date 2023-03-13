@@ -36,15 +36,6 @@ body{
     transition: all .3s ease-in-out;
 }
 
-.container:hover .plus{
-    opacity: 1;
-}
-
-.container:hover .block--inner span{
-    transform: scale(113%);
-    opacity: 1;
-}
-
 .block--inner {
     display: block;
     cursor: pointer;
@@ -78,23 +69,6 @@ body{
     cursor: pointer;
     height: 0%;
     transition: all .3s ease-in-out;
-}
-
-.block:hover .block--info{
-    height: 30%;
-}
-
-.block:hover .block--info img{
-    max-width: 45%;
-    margin-top: 1vw;
-}
-
-.block:hover .block--inner {
-    border-bottom: .12vw solid rgba(209, 169, 248, 0.9);
-}
-
-.block:hover .block--inner div{
-    transform: rotate(45deg);
 }
 
 .block:active .block--inner div ,
@@ -194,4 +168,39 @@ input:checked + .block--inner{
 .block--inner span{
     font-size: 1rem;
 }
+}
+
+@media (hover: hover) {
+    .container:hover .plus{
+        opacity: 1;
+    }
+
+    .container:hover .block--inner span{
+        transform: scale(113%);
+        opacity: 1;
+    }
+
+    .block:hover .block--info{
+        height: 30%;
+    }
+
+    .block:hover .block--info img{
+        max-width: 45%;
+        margin-top: 1vw;
+    }
+
+    .block:hover .block--inner {
+        border-bottom: .12vw solid rgba(209, 169, 248, 0.9);
+    }
+
+    .block:hover .block--inner div{
+        transform: rotate(45deg);
+    }
+}
+
+@media (hover: none) {
+    .block--inner span{
+        transform: scale(113%);
+        opacity: 1;
+    }
 }
